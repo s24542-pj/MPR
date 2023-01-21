@@ -18,5 +18,14 @@ public class ClientStorage {
     public List<Client> getClients(){
         return clients;
     }
+    public boolean isLogin(){
+        for (Client client : clients){
+            if (client.getLogin() == true){
+                return true;
+            }
+            return false;
 
+        }
+        return false;
+    }
 }
